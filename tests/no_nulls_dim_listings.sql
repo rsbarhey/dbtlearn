@@ -1,0 +1,1 @@
+{{ no_null_columns(ref('dim_listings_cleansed'))}}
