@@ -2,6 +2,8 @@ version: 2
 
 models:
   - name: dim_listings_cleansed
+    tests:
+      - no_null_columns_in_model
     columns:
       - name: listing_id
         tests:
@@ -24,7 +26,7 @@ models:
                 'Shared room',
                 'Hotel room'
               ]
-               
+
       - name: minimum_nights
         tests:
           - positive_value
